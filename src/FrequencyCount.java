@@ -1,13 +1,11 @@
-import java.security.KeyStore.Entry;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class FrequencyCount {
     public static void main(String[] args) {
-        int[] alist = { 1, 2, 2, 4, 1, 2, 4 };
+        // int[] alist = { 1, 2, 2, 4, 1, 2, 4 };
         int[] blist = { 2, 5, 5, 11, 4, 9, 11, 2 };
         LinkedHashMap<Integer, Integer> map = new LinkedHashMap<Integer, Integer>();
         LinkedHashMap<Integer, Integer> map2 = new LinkedHashMap<Integer, Integer>();
