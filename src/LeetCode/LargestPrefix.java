@@ -11,8 +11,9 @@ public class LargestPrefix {
         int max = 0;
         char[] s1 = strs[0].toCharArray();
         int i = 0;
+        int j;
         while (flag) {
-            for (int j = 0; j < strs.length; j++) {
+            for (j = 0; j < strs.length; j++) {
                 if (strs[j].length() - 1 < i || strs[j].charAt(i) != s1[i]) {
                     flag = false;
                     max = i;
