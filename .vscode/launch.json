@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Eas",
+            "request": "launch",
+            "mainClass": "LeetCode.Eas",
+            "projectName": "DSA_a610dbd8"
+        },
+        {
+            "type": "java",
+            "name": "Launch MergeLinkedList",
+            "request": "launch",
+            "mainClass": "LeetCode.MergeLinkedList",
+            "projectName": "DSA_a610dbd8"
+        },
+        {
+            "type": "java",
             "request": "attach",
             "name": "Attach by Process ID",
             "processId": "${command:PickJavaProcess}"
