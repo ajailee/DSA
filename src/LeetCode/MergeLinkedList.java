@@ -50,10 +50,18 @@ public class MergeLinkedList {
         ListNode s2 = new ListNode(4);
         list2.next = s1;
         s1.next = s2;
+        System.out.println(mergeTwoLists(list1, list2));
+
+    }
+
+    public static ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+        if (list1 == null)
+            return list2;
+        if (list2 == null)
+            return list1;
 
         while (list2 != null) {
             ListNode node = new ListNode(list2.val);
-            System.out.println(list2.val);
             if (node.val < list1.val) {
                 node.next = list1;
                 list1 = node;
@@ -64,13 +72,7 @@ public class MergeLinkedList {
             list2 = list2.next;
 
         }
-        while (list1 != null) {
-
-            System.out.println(list1.val);
-            list1 = list1.next;
-
-        }
-
+        return list1;
     }
 
     public static void sort(ListNode s, ListNode n) {
