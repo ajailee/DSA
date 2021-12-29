@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch RemoveDuplicateFromArray",
+            "request": "launch",
+            "mainClass": "LeetCode.RemoveDuplicateFromArray",
+            "projectName": "DSA_a610dbd8"
+        },
+        {
+            "type": "java",
             "name": "Launch Eas",
             "request": "launch",
             "mainClass": "LeetCode.Eas",
