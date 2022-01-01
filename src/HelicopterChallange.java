@@ -1,4 +1,3 @@
-package main.java;
 
 public class HelicopterChallange {
     public static void main(String[] args) throws InterruptedException {

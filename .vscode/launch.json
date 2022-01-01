@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch LengthOfLastWord",
+            "request": "launch",
+            "mainClass": "LeetCode.LengthOfLastWord",
+            "projectName": "DSA_a610dbd8"
+        },
+        {
+            "type": "java",
             "name": "Launch FindTheIndex",
             "request": "launch",
             "mainClass": "LeetCode.FindTheIndex",
