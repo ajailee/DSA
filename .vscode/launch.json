@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch FindTheIndex",
+            "request": "launch",
+            "mainClass": "LeetCode.FindTheIndex",
+            "projectName": "DSA_a610dbd8"
+        },
+        {
+            "type": "java",
             "name": "Launch RemoveDuplicateFromArray",
             "request": "launch",
             "mainClass": "LeetCode.RemoveDuplicateFromArray",
