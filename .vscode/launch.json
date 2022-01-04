@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch BinaryAdd",
+            "request": "launch",
+            "mainClass": "LeetCode.BinaryAdd",
+            "projectName": "DSA_a610dbd8"
+        },
+        {
+            "type": "java",
             "name": "Launch AddPlusOne",
             "request": "launch",
             "mainClass": "LeetCode.AddPlusOne",
