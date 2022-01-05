@@ -18,10 +18,19 @@ public class BinaryAdd {
         int alen = a.length() - 1;
         int blen = b.length() - 1;
         int carry = 0;
-        while (alen >= 0 || blen >= 0 || carry == 1) {
+        while (alen >= 0 || blen >= 0) {
+            int sum = carry;
+            if (alen >= 0)
+                sum = sum + (a.charAt(alen--) - '0');
+            if (blen >= 0)
+                sum = sum + (b.charAt(blen--) - '0');
+            br.append(sum % 2);
+            carry = sum / 2;
 
         }
-
-        return br.toString();
+        if (carry != 0) {
+            br.append(carry);
+        }
+        return br.reverse().toString();
     }
 }
