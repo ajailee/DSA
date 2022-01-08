@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch BrinaryTree",
+            "request": "launch",
+            "mainClass": "LeetCode.BrinaryTree",
+            "projectName": "DSA_a610dbd8"
+        },
+        {
+            "type": "java",
             "name": "Launch RemoveDuplicatefromSortedLinkedList",
             "request": "launch",
             "mainClass": "LeetCode.RemoveDuplicatefromSortedLinkedList",
