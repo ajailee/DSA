@@ -127,18 +127,29 @@ public class BestDayToBuyStock {
             367, 424, 410, 888, 868, 74, 491, 734, 282, 964, 887, 432, 192, 374, 480, 904, 833, 565, 941, 224 };
 
     public static void main(String[] args) {
+        int min = 0;
         int max = 0;
-        List<Integer> list = Arrays.stream(prices).boxed().collect(Collectors.toList());
-        list.indexOf(Collections.max(list));
-        list.indexOf(Collections.min(list));
-
-        if (max < list.indexOf(Collections.max(list)) -
-                list.indexOf(Collections.min(list))) {
-            max = list.indexOf(Collections.max(list)) -
-                    list.indexOf(Collections.min(list));
-        } else {
-            list.remove(Collections.min(list));
+        for (int i = 0; i < prices.length; i++) {
+            if (prices[i] > prices[min]) {
+                max = Math.max(max, prices[i] - prices[min]);
+            } else {
+                min = i;
+            }
         }
         System.out.println(max);
+        System.out.println(maxProfit(prices));
+    }
+
+    public static int maxProfit(int[] prices) {
+        int min = 0;
+        int max = 0;
+        for (int i = 0; i < prices.length; i++) {
+            if (prices[i] > prices[min]) {
+                max = Math.max(max, prices[i] - prices[min]);
+            } else {
+                min = i;
+            }
+        }
+        return max;
     }
 }
