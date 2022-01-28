@@ -21,7 +21,8 @@ public class CommonString {
         }
         System.out.println(s1set);
         for (char c : s2.toCharArray()) {
-            s2set.add(c);
+            if (c != ' ')
+                s2set.add(c);
         }
         for (char c : s1set) {
             if (s2set.contains(c)) {
@@ -29,5 +30,8 @@ public class CommonString {
             }
         }
         System.out.println(result);
+        // we can use retainAll which is like AND operation
+        System.out.println(s1set.retainAll(s2set));
+        System.out.println(s1set);
     }
 }
