@@ -1,4 +1,4 @@
-package LeetCode;
+package LeetCodeEasy;
 
 public class MaximumDepthofBinaryTree {
     public static int maxDepth(TreeNode root) {

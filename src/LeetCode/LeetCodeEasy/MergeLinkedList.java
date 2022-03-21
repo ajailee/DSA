@@ -1,3 +1,4 @@
+package LeetCodeEasy;
 // package LeetCode;
 
 // /*

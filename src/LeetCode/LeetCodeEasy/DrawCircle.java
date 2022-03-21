@@ -1,4 +1,4 @@
-package LeetCode;
+package LeetCodeEasy;
 
 import java.awt.Graphics2D;
 import java.awt.event.*;

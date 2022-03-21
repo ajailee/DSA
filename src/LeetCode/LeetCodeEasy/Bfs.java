@@ -1,4 +1,4 @@
-package LeetCode;
+package LeetCodeEasy;
 
 // we need to print the node with same level
 public class Bfs {

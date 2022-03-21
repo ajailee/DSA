@@ -1,4 +1,4 @@
-package LeetCode;
+package LeetCodeEasy;
 
 // Java program to demonstrate
 // creation of random pixel image

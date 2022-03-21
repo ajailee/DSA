@@ -1,4 +1,4 @@
-package LeetCode;
+package LeetCodeEasy;
 
 public class Intersection {
     public static void main(String[] args) {
@@ -44,17 +44,7 @@ public class Intersection {
     }
 }
 
-class ListNode {
 
-    int val;
-    ListNode next;
-
-    ListNode(int x) {
-        val = x;
-        next = null;
-    }
-
-}
 // ======================best solution=======================//
 // public class Solution {
 // public ListNode getIntersectionNode(ListNode headA, ListNode headB) {

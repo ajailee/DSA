@@ -1,4 +1,4 @@
-package LeetCode;
+package LeetCodeEasy;
 
 public class SymentricTree {
     public static void main(String[] args) {
