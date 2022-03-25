@@ -10,6 +10,11 @@ public class CreateRotatedArray {
       ArrayList l = rotate(list,0);
       System.out.println(l);
   }
+  static ArrayList getRotatedArrayList(){
+      ArrayList<Integer> list = new ArrayList<>();
+      list.addAll(Arrays.asList(1,2,3,4,5,6,7));
+      return rotate(list,0);
+  }
   static ArrayList rotate(ArrayList arrayList,int count){
       if(count==5){
           return arrayList;

@@ -1,5 +1,7 @@
 {
     "java.project.sourcePaths": [
-        "src/LeetCode"
-    ]
+        "src/LeetCode",
+        "src/YouTube"
+    ],
+    "java.help.shareDiagnostics": true
 }

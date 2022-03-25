@@ -10,6 +10,7 @@ public class MajorityElement169 {
     //
   }
   static int majorityElement(int[] arr){
-      HashMap<Integer>
+      //HashMap<Integer>
+      return 0;
   }
 }
