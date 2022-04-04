@@ -14,7 +14,13 @@ public class MergeSort {
 }
 
   public  static void inplaceSplit(int[] arr,int start,int end){
-      if(end)
+      if(start==end){
+          return;
+      }
+      int mid = arr.length/2;
+      inplaceSplit(arr,start,mid);
+      inplaceSplit(arr,mid,arr.length);
+
   }
 
   public static  int[] split(int[] arr){
@@ -54,5 +60,22 @@ public class MergeSort {
         }
         return result;
   }
+    static void swap(int first,int second,int[] arr){
+        int temp = arr[first];
+        arr[first]=arr[second];
+        arr[second]=temp;
+    }
+    public static void inplacemerge(int[]arr,int start,int end){
+        int lp = 0;
+        int rp = 0;
+
+    while (lp < start && rp < end) {
+      if (arr[lp] < arr[rp]) {
+        swap(start, end, arr);
+      } else {
+        swap(end, start, arr);
+      }
+    }
+    }
 }
 
