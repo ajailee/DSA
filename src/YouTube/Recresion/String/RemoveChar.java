@@ -1,14 +1,11 @@
 package Recresion.String;
-
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-
 public class RemoveChar {
   public static void main(String[] args) throws java.io.IOException {
-    String s = "adfdddbccabcaajdfds";
-    String ans = remove(s, 0);
-    System.out.println(ans);
-    skip("", s);
+    String s = "adfdddbccabcaajddfddsddd";
+        String ans = remove(s, 0);
+        System.out.println(ans);
+        skip("", s);
+    System.out.println(skipWord("", s, "ddd"));
   }
 
   private static String remove(String s, int index) {
@@ -23,13 +20,28 @@ public class RemoveChar {
 
   private static void skip(String result, String input) {
     if (input.isEmpty()) {
-      System.out.print(result);
+      System.out.println(result);
       return;
     }
     if (input.charAt(0) != 'd') {
       skip(result + (input.charAt(0) + ""), input.substring(1));
     } else {
       skip(result, input.substring(1));
+    }
+  }
+
+  private static String skipWord(String result, String input, String skipWord) {
+    if (input.isEmpty()) {
+      return result;
+    }
+    if (input.length() < skipWord.length()) {
+      result += input;
+      return result;
+    }
+    if (input.substring(0, skipWord.length()).equals(skipWord)) {
+      return skipWord(result, input.substring(skipWord.length()), skipWord);
+    } else {
+      return skipWord(result + input.charAt(0), input.substring(1), skipWord);
     }
   }
 }
