@@ -1,4 +1,4 @@
-package Recresion;
+package Recresion.SubSet;
 
 import java.util.*;
 
@@ -21,7 +21,7 @@ public class PhoneNumberCombination {
         map.put(i, ans);
         alp = alp + 1;
       }
-      ;
+
     }
 
     System.out.println(findCombinations("a", "de"));
@@ -30,13 +30,16 @@ public class PhoneNumberCombination {
   static List<String> findCombinations(String processed, String unprocessed) {
     if (unprocessed.isEmpty()) {
       List<String> result = new ArrayList<>();
-        result.add(processed);
+      result.add(processed);
       return result;
     }
-    List<String> left =
-        findCombinations(processed + unprocessed.charAt(0), unprocessed.substring(1));
+    List<String> left = findCombinations(processed + unprocessed.charAt(0), unprocessed.substring(1));
     List<String> right = findCombinations(processed, unprocessed.substring(1));
     left.addAll(right);
     return left;
+  }
+
+  static void findCombinations2(String processed, String unprocessed) {
+
   }
 }
