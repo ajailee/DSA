@@ -3,9 +3,32 @@ package Recresion.SubSet;
 import java.util.*;
 
 public class PhoneNumberCombination {
+  static HashMap<Integer, String> map = new HashMap<>();
+
   public static void main(String[] args) {
-    String number = "23";
-    HashMap<Integer, String> map = new HashMap<>();
+    load();
+    String number = "";
+    ArrayList<String> list = new ArrayList<>();
+    findCombinations("", number, list);
+    System.out.println(list);
+  }
+
+  static void findCombinations(String processed, String unprocessed, ArrayList<String> list) {
+    if (unprocessed.isBlank()) {
+      list.add(processed);
+      return;
+    }
+    String s = getString(unprocessed.charAt(0) + "");
+    for (int i = 0; i < s.length(); i++) {
+      findCombinations(processed + s.charAt(i), unprocessed.substring(1), list);
+    }
+  }
+
+  static String getString(String processed) {
+    return map.get(Integer.parseInt(processed));
+  }
+
+  static void load() {
     int alp = (int) 'a';
     for (int i = 2; i < 10; i++) {
       String ans = "";
@@ -21,25 +44,6 @@ public class PhoneNumberCombination {
         map.put(i, ans);
         alp = alp + 1;
       }
-
     }
-
-    System.out.println(findCombinations("a", "de"));
-  }
-
-  static List<String> findCombinations(String processed, String unprocessed) {
-    if (unprocessed.isEmpty()) {
-      List<String> result = new ArrayList<>();
-      result.add(processed);
-      return result;
-    }
-    List<String> left = findCombinations(processed + unprocessed.charAt(0), unprocessed.substring(1));
-    List<String> right = findCombinations(processed, unprocessed.substring(1));
-    left.addAll(right);
-    return left;
-  }
-
-  static void findCombinations2(String processed, String unprocessed) {
-
   }
 }
