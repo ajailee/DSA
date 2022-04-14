@@ -16,6 +16,10 @@ public class SumSubset {
             return;
         }
         for (int n : number) {
+
+            if (target == 0) {
+                break;
+            }
             if (n <= target) {
                 target = target - n;
                 p = p + n;

@@ -6,6 +6,21 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Maze1",
+            "request": "launch",
+            "mainClass": "Recresion.Maze.Maze1",
+            "projectName": "DSA_a610dbd8"
+        },
+        {
+            "type": "java",
+            "name": "Launch SumSubset",
+            "request": "launch",
+            "mainClass": "Recresion.SubSet.SumSubset",
+            "projectName": "DSA_a610dbd8",
+            "stopOnEntry": true
+        },
+        {
+            "type": "java",
             "name": "Launch Dice",
             "request": "launch",
             "mainClass": "Recresion.SubSet.Dice",
