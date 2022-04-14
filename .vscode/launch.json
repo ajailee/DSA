@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Maze2",
+            "request": "launch",
+            "mainClass": "Recresion.Maze.Maze2",
+            "projectName": "DSA_a610dbd8"
+        },
+        {
+            "type": "java",
             "name": "Launch Maze1",
             "request": "launch",
             "mainClass": "Recresion.Maze.Maze1",
