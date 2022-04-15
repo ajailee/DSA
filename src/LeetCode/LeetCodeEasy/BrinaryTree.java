@@ -16,21 +16,21 @@ public class BrinaryTree {
     }
 
     public static List<Integer> inorderTraversal(TreeNode root) {
-        List list = new ArrayList<Integer>();
+        List<Integer> list = new ArrayList<Integer>();
         travasal(root, list);
         return list;
 
     }
 
     public static List<Integer> preorderTraversal(TreeNode root) {
-        List list = new ArrayList<Integer>();
+        List<Integer> list = new ArrayList<Integer>();
         travasalpre(root, list);
         return list;
 
     }
 
     public static List<Integer> inorderTraversal2(TreeNode root) {
-        List list = new ArrayList<Integer>();
+        List<Integer> list = new ArrayList<Integer>();
         Stack<TreeNode> stack = new Stack<TreeNode>();
         TreeNode currentNode = root;
         while (currentNode != null || !stack.isEmpty()) {
@@ -48,7 +48,7 @@ public class BrinaryTree {
     }
 
     public static List<Integer> prefixorderTraversal2(TreeNode root) {
-        List list = new ArrayList<Integer>();
+        List<Integer> list = new ArrayList<Integer>();
         Stack<TreeNode> stack = new Stack<TreeNode>();
         TreeNode currentNode = root;
         while (currentNode != null || !stack.isEmpty()) {

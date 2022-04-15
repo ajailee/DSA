@@ -1,10 +1,5 @@
 package LeetCodeEasy;
 
-import java.math.BigInteger;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 //66. Plus One
 public class AddPlusOne {
     public static void main(String[] args) {

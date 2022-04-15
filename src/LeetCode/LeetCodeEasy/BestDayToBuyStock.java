@@ -1,11 +1,5 @@
 package LeetCodeEasy;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-import java.util.stream.Collectors;
-
 public class BestDayToBuyStock {
     public static int[] prices = new int[] { 897, 265, 201, 86, 56, 657, 273, 25, 843, 625, 641, 332, 509, 463, 496, 97,
             779, 241,
