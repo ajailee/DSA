@@ -1,4 +1,4 @@
-package Recresion.Maze;
+package Recresion.Backtracking.Maze;
 
 public class Maze1 {
     public static void main(String[] args) {

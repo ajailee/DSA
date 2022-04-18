@@ -1,4 +1,4 @@
-package Recresion.Maze;
+package Recresion.Backtracking.Maze;
 
 import java.util.ArrayList;
 import java.util.List;
