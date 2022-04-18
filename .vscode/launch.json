@@ -6,17 +6,24 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Knight",
+            "request": "launch",
+            "mainClass": "Recresion.Backtracking.knight.Knight",
+            "projectName": "DSA_a610dbd8"
+        },
+        {
+            "type": "java",
             "name": "Launch Nqueencopy",
             "request": "launch",
             "mainClass": "Recresion.Backtracking.Nqueen.Nqueencopy",
-            "projectName": "DSA_a610dbd8",
+            "projectName": "DSA_a610dbd8"
         },
         {
             "type": "java",
             "name": "Launch Nqueen",
             "request": "launch",
             "mainClass": "Recresion.Backtracking.Nqueen.Nqueen",
-            "projectName": "DSA_a610dbd8",
+            "projectName": "DSA_a610dbd8"
         },
         {
             "type": "java",
