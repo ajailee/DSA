@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Sudoku2",
+            "request": "launch",
+            "mainClass": "Recresion.sudoku.Sudoku2",
+            "projectName": "DSA_a610dbd8"
+        },
+        {
+            "type": "java",
             "name": "Launch Sudokucopy",
             "request": "launch",
             "mainClass": "Recresion.sudoku.Sudokucopy",
