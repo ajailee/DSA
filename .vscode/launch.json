@@ -6,6 +6,21 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Sudokucopy",
+            "request": "launch",
+            "mainClass": "Recresion.sudoku.Sudokucopy",
+            "projectName": "DSA_a610dbd8"
+        },
+        {
+            "type": "java",
+            "name": "Launch Sudoku",
+            "request": "launch",
+            "mainClass": "Recresion.sudoku.Sudoku",
+            "projectName": "DSA_a610dbd8",
+            "stopOnEntry": true
+        },
+        {
+            "type": "java",
             "name": "Launch Knight",
             "request": "launch",
             "mainClass": "Recresion.Backtracking.knight.Knight",
